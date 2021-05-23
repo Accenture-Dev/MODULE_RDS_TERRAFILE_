@@ -15,7 +15,7 @@ module "SG" {
   apply_immediately                = "true"
   backup_retention_period          = 10
   backup_window                    = "09:46-10:16"
-  vpc_security_group_ids           = ["sg-0efd06e0c27a65e4a",]
+  vpc_security_group_ids           = "sg-0efd06e0c27a65e4a"
 
 #  aws_db_subnet_group
 

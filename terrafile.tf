@@ -4,22 +4,22 @@ module "SG" {
 #  aws_db_instance
 
   db_instance                      = ""
-  engine                           = ""  
-  engine_version                   = ""
-  multi_az                         = ""
-  storage_type                     = ""
-  allocated_storage                = ""
-  name                             = ""
-  username                         = ""
-  chavinha                         = ""
-  apply_immediately                = ""
-  backup_retention_period          = ""
-  backup_window                    = ""
+  engine                           = "mysql"  
+  engine_version                   = "5.7"
+  multi_az                         = "true"
+  storage_type                     = "gp2"
+  allocated_storage                = "20"
+  name                             = "cloudstartkit"
+  username                         = "admin"
+  chavinha                         = "gerar_hash"
+  apply_immediately                = "true"
+  backup_retention_period          = 10
+  backup_window                    = "09:46-10:16"
   vpc_security_group_ids           = ["",""]
 
 #  aws_db_subnet_group
 
-  name_rds-db-subnet-CloudStartKit = ""
+  name_rds-db-subnet-CloudStartKit = "cloudstartkit"
   rds_subnet1                      = ""
   rds_subnet2                      = ""
 

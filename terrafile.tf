@@ -15,12 +15,12 @@ module "SG" {
   apply_immediately                = "true"
   backup_retention_period          = 10
   backup_window                    = "09:46-10:16"
-  vpc_security_group_ids           = "sg-0efd06e0c27a65e4a"
+  vpc_security_group_ids           = "sg-09ddffc21f445f117"
 
 #  aws_db_subnet_group
 
   name_rds-db-subnet-CloudStartKit = "cloudstartkit"
-  rds_subnet1                      = "subnet-0b0a30cbda8767b7b"
-  rds_subnet2                      = "subnet-02b00bebcc0727d4c"
+  rds_subnet1                      = "subnet-0bdd4901422eba30b"
+  rds_subnet2                      = "subnet-0bdd4901422eba30b"
 
 }

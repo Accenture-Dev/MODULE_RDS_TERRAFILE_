@@ -19,7 +19,7 @@ module "SG" {
 
 #  aws_db_subnet_group
 
-  name_rds-db-subnet-CloudStartKit = "cloudstartkiT"
+  name_rds-db-subnet-CloudStartKit = "cloudstart-kit"
   rds_subnet1                      = "subnet-0ba1cd7a9851f96ba"
   rds_subnet2                      = "subnet-0c5f34a91591ee455"
 
